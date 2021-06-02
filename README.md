@@ -202,7 +202,7 @@ Javascript kullanıcıya girdi sormak **prompt** kodu ile yapılır
 alert(person);
 ```
 
-## Operatörler:
+## Operatörler: (Olurda fotoğrafları göremiyorsanız direk pdf e bakabilirsiniz)
 
 ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/22a4fcf3-8693-498f-aee0-a08985f9778a/Screen_Shot_2021-06-02_at_22.23.12.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/22a4fcf3-8693-498f-aee0-a08985f9778a/Screen_Shot_2021-06-02_at_22.23.12.png)
 
