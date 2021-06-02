@@ -198,11 +198,17 @@ uyari("Merhaba JavaScript");
 Javascript kullanıcıya girdi sormak **prompt** kodu ile yapılır
 
 ```jsx
-**var person = prompt("Please enter your name");**
+var person = prompt("Please enter your name");
 alert(person);
 ```
 
-## Operatörler: (Olurda fotoğrafları göremiyorsanız direk pdf e bakabilirsiniz)
+## Operatörler:
+
+<img width="706" alt="Screen Shot 2021-06-03 at 00 30 32" src="https://user-images.githubusercontent.com/84273839/120554843-ebcd2180-c402-11eb-90fa-5233a7cec33a.png">
+
+
+<img width="706" alt="Screen Shot 2021-06-03 at 00 30 14" src="https://user-images.githubusercontent.com/84273839/120554801-deb03280-c402-11eb-8370-6066278ebfc7.png">
+
 
 <img width="706" alt="Screen Shot 2021-06-02 at 23 56 53" src="https://user-images.githubusercontent.com/84273839/120550983-36986a80-c3fe-11eb-9490-6800b1b6e929.png">
 
