@@ -204,10 +204,6 @@ alert(person);
 
 ## Operatörler: (Olurda fotoğrafları göremiyorsanız direk pdf e bakabilirsiniz)
 
-<img width="706" alt="Screen Shot 2021-06-02 at 23 55 54" src="https://user-images.githubusercontent.com/84273839/120550879-14065180-c3fe-11eb-9f5e-63a5f48e00fb.png">
-
-<img width="706" alt="Screen Shot 2021-06-02 at 23 56 16" src="https://user-images.githubusercontent.com/84273839/120550920-21234080-c3fe-11eb-81bb-b5169a93e48c.png">
-
 <img width="706" alt="Screen Shot 2021-06-02 at 23 56 53" src="https://user-images.githubusercontent.com/84273839/120550983-36986a80-c3fe-11eb-9490-6800b1b6e929.png">
 
 <img width="706" alt="Screen Shot 2021-06-02 at 23 57 19" src="https://user-images.githubusercontent.com/84273839/120551044-46b04a00-c3fe-11eb-84dd-f62ec273efd5.png">
