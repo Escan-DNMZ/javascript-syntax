@@ -192,6 +192,58 @@ function uyari(mesaj) {
 }
 uyari("Merhaba JavaScript");
 ```
+## Window object
+
+```jsx
+//alert
+alert(`Merhaba`);
+
+//prompt
+var i = prompt(`bir sayı  gir`);
+
+//confirm
+var cikis = confirm(`emin misiniz ?`)
+
+//location
+window.location.reload(); //bu kod sonrası site kendini sürekli f5 ler
+```
+
+## Scope
+
+### Global Scope
+
+```jsx
+var name = `Escan`;
+// her yerden ulaşılabilir
+
+if(true){
+console.log(name)
+}
+//----------//
+
+for(name == `Escan`){
+console.log(name)*5;
+}
+//----------//
+function logName(){
+console.log(name);
+}
+//Hepsinin çıktısı aynı olur  Escan
+```
+
+### Local Scope
+
+```jsx
+//Fonksiyonlar kendi scope larını oluşturur o değişken sadece fonksiyonda çalışır
+function logName(){
+var name = `ahmet`;
+var age = `12`;
+console.log(`function scope `,name,age); //bu kod konsola ismi ve yaşı yazar fakat
+}
+
+console.log(`function scope `,name,age); //fonksiyon çıktığı için bu kod çalışmaz
+
+```
 
 ## Javascript kullanıcıya girdi sormak
 
