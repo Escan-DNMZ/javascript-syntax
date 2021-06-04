@@ -244,6 +244,10 @@ console.log(`function scope `,name,age); //bu kod konsola ismi ve yaşı yazar f
 console.log(`function scope `,name,age); //fonksiyon çıktığı için bu kod çalışmaz
 
 ```
+## Javascript-Dom
+
+### Tekil element seçimi
+
 ```jsx
 //document.getElementById()
 let val;
