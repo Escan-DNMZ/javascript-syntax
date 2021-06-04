@@ -244,6 +244,59 @@ console.log(`function scope `,name,age); //bu kod konsola ismi ve yaşı yazar f
 console.log(`function scope `,name,age); //fonksiyon çıktığı için bu kod çalışmaz
 
 ```
+```jsx
+//document.getElementById()
+let val;
+val = document.getElementById('header'); //Bu kodla head id li etiketleri 👇
+console.log(val); //val değişkeni ile konsola  yazdırdık
+
+val = val.id; //diyerek val değişkenindeki (header ın id sini verir)
+val = val.className; //diyerek val değişkenindeki (header ın class ını verir)
+val.style.fontsize='45px'; //bu kodla header etiketli yerin fontunu değiştirdik
+val.style.color='purple'; //bu kodla header etiketli yerin rengini değiştirdik
+
+val = document.getElementById('header').innerHTML='my  to do app';// 👇
+//Bu kodla header daki texti my to do app le değiştirebiliriz
+
+//--------------------------------------------------------------------------//
+
+//document.querySelector()
+
+console.log(document.querySelector('#header')); //Şeklindede kullanılabilir
+
+document.querySelector('li').style.color='red';//bulduğu 1.listeyi kırmızı yapar
+
+document.querySelector('li:nt-child(2)').style.color='red';//2. li yi red yapar
+```
+
+### Çoklu element seçimi
+
+```jsx
+//document.getElementsByClassName()
+let val;                              //class etiketi//ilk elemanı  alır 
+val = document.getElementsByClassName('list-group-item')[0];
+																			//class etiketi//3. elemanı alır
+val = document.getElementsByClassName('list-group-item')[2];
+
+val[1].style.color'blur'; //şeklindede kullanılır 2. elemanı mavi  yapar
+val[1].fontSize'25px'; // 2. elemanı 25 px yapar
+val[1].textContent='new item'; //2. elemanın yazısını new item  yapar
+
+//Örnek
+for(let i=0; i<val.length; i++){
+console.log(val[i].style.color='red'); //bütün val ı kırmızı yaptı
+}
+
+//document.getElementsByTagName()
+
+val=document.getElementsByTagName('li');//bütün li etiketlerini aldı
+
+//document.querySelectorAll()
+
+val = document.querySelectorAll('li');//burdada li yi verir fakat Nodelist olrak
+//buda bize forEach gibi yapıları kullanmamıza  yarar
+
+```
 
 ## Javascript kullanıcıya girdi sormak
 
