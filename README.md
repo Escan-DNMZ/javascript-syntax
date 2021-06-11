@@ -301,6 +301,106 @@ val = document.querySelectorAll('li');//burdada li yi verir fakat Nodelist olrak
 //buda bize forEach gibi yapıları kullanmamıza  yarar
 
 ```
+### Dom elementleri üzerinde oynama
+
+```jsx
+let val;                            //class
+let list = document.querySelector('.list-group');
+val = list;
+val = list.childNodes; //Nodelist leri bize gösterir
+val = list.childNodes[0]; //0 ıncı nodelist i getirir
+val = childNodes[0].nodeType; //node un tipini gösterir 3 gibi
+val = list.children[0]; //ilk  list-group etiketli li yi gösterir
+val = list.children[2].textContent='new item';// textini new item yapar 3. list i
+val = list.firstElementChild;//ilk eleman gelir
+val = lastElementChild; //son elemanı alır
+
+for(let i=0; i<list.children.length; i++){ //list-group un length i kadar 
+if(list.childNodes[i].nodeType===1){
+console.log(list.childNodes[i]);
+}
+}
+```
+
+### Element oluşturma
+
+```jsx
+//create element
+const li = document.createElement('li'); //bir li etiketi oluşturduk
+console.log(li)
+//add class
+li.className='list-group';
+//add attribute
+li.setAttribute('title','new item');
+li.setAttribute('placeholder','sayı giriniz');
+//text node
+const text = document.createTextNode('new item');
+li.appendChild(text); //new  item text bölümüne eklendi
+//add link
+const a = document.createElement('a');
+a.setAttribute('href','#');
+a.className='list-item';
+```
+
+### element silme
+
+```jsx
+const tasklist = document.querySelector('#task-list');
+tasklist.remove(); //ul listesi silindi
+//belli bir eleman silme
+tasklist.childNodes[7].remove(); //8. elemanı sildik
+//diğer yolr
+tasklist.children[0].remove(); //1. elemanı sildi
+//removing attribute
+tasklist.children[0].removeAttribute('class');
+//örnek
+for(let i=0;i<tasklist.children.length;i++){
+tasklist.children[i].removeAttribute('class');
+}
+```
+
+## javascript - events
+
+```jsx
+const button = document.querySelector('#btnDeleteAll');
+btn.addEventListener('click',function(){
+console.log('button clicked');
+});
+//diğer kullanımı
+btn.addEventListener('click',btnClick);
+
+function  btnClick(){
+console.log('clicked');
+}
+//link
+btn.addEventListener('click',function(e){
+console.log('clicked')
+e.preventDefault(); //böylece linkin görevibi yapması yerine clicked yazdı
+});
+
+```
+
+### mouse events
+
+```jsx
+const btn = document.querySelector('#btnDeleteAll')
+const ul = document.querySelector('#task-list');
+//click
+btn.addEventListener('click',eventHandler);
+
+function. eventHandler(event){
+console.log(`event type: ${event.type} `);
+}
+//çıktı: event type: click
+
+//double click
+btn.addEventListener('dbclick',eventHandler);
+
+function eventHandler(event){
+	console.log(`event type: ${event.type}`);
+}
+//çıktı: event type: dbclick
+```
 
 ## Javascript kullanıcıya girdi sormak
 
