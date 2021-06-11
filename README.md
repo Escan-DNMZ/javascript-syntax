@@ -401,6 +401,44 @@ function eventHandler(event){
 }
 //çıktı: event type: dbclick
 ```
+### keybord event
+
+```jsx
+//keydown,keyup
+const input = document.querySelector('#txtTaskName');
+
+input.addEventListener('keydown',eventHandler);
+
+function eventHandler(event){
+console.log('event type:' + event.type)
+}
+//tuşa basdığın an keydown olur çekdiğin zaman keyup olur
+
+//keypress
+input.addEventListener('keypress',eventHandler);
+
+function eventHandler(event){
+console.log('event type:' + event.type);
+}
+
+//focus
+input.addEventListener('focus',eventHandler);
+
+function eventHandler(event){
+console.log('event type:' + event.type);
+
+event.target.style.backgroundColor='red'; //text tıkladığında arka planı red olur
+}
+
+//cut
+input.addEventListener('cut',eventHandler);
+
+function eventHandler(event){
+console.log('event type:' + event.type);
+}
+//ctrl x yapıldığında bunu console loga yazar
+```
+
 
 ## Javascript kullanıcıya girdi sormak
 
