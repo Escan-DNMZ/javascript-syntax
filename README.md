@@ -3,7 +3,7 @@
 ---
 
 kod sonları **( ; )** ile belirtilir, stringler alert veya console.log **( ``,''," )( option+, )** ile belirtilir
-
+// notlar tamamen Escan'a aittir
 Javascript de **{ }** kullanılır.
 
 ## Diziler
@@ -68,7 +68,7 @@ alert(`a b den büyüktür`);
 
 }
 ```
-
+// notlar tamamen Escan'a aittir
 ## Javascript  Döngüler
 
 ### For döngüsü
@@ -207,7 +207,7 @@ var cikis = confirm(`emin misiniz ?`)
 //location
 window.location.reload(); //bu kod sonrası site kendini sürekli f5 ler
 ```
-
+// notlar tamamen Escan'a aittir
 ## Scope
 
 ### Global Scope
@@ -379,7 +379,7 @@ e.preventDefault(); //böylece linkin görevibi yapması yerine clicked yazdı
 });
 
 ```
-
+// notlar tamamen Escan'a aittir
 ### mouse events
 
 ```jsx
@@ -439,7 +439,7 @@ console.log('event type:' + event.type);
 //ctrl x yapıldığında bunu console loga yazar
 ```
 
-
+// notlar tamamen Escan'a aittir
 ## Javascript kullanıcıya girdi sormak
 
 Javascript kullanıcıya girdi sormak **prompt** kodu ile yapılır
